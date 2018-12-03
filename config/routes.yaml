@@ -1,0 +1,6 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+overblog_graphql_endpoint:
+  resource: "@OverblogGraphQLBundle/Resources/config/routing/graphql.yml"
+  prefix: /graphql

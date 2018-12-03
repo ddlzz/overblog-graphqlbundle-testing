@@ -1,0 +1,16 @@
+overblog_graphql:
+  batching_method: "apollo"
+  definitions:
+    schema:
+      query: RootQuery
+      resolver_maps:
+        - App\GraphQL\Resolver\FooMap
+        - App\GraphQL\Resolver\FooBarMap
+    mappings:
+      auto_discover: false
+      types:
+        - type: graphql
+          dir: "%kernel.project_dir%/config/graphql"
+          suffix: ~
+    show_debug_info: true
+    config_validation: "%kernel.debug%"
